@@ -1,0 +1,69 @@
+@import url("https://fonts.googleapis.com/css2?family=Plus+Jakarta+Sans:wght@300;400;500;600;700&family=Bricolage+Grotesque:wght@400;600;700;800&display=swap");
+
+@tailwind base;
+@tailwind components;
+@tailwind utilities;
+
+@layer base {
+  :root {
+    --radius: 0.75rem;
+
+    /* MJ Coaching Centre — Teal + Navy palette */
+    --background: 0.975 0.004 240;
+    --foreground: 0.2 0.02 240;
+    --card: 1 0 0;
+    --card-foreground: 0.2 0.02 240;
+    --popover: 1 0 0;
+    --popover-foreground: 0.2 0.02 240;
+
+    /* Primary = Teal #0F8A8A → oklch ~0.58 0.12 192 */
+    --primary: 0.58 0.12 192;
+    --primary-foreground: 1 0 0;
+
+    /* Secondary = Deep Navy #0B2E4A → oklch ~0.26 0.06 240 */
+    --secondary: 0.26 0.06 240;
+    --secondary-foreground: 1 0 0;
+
+    --muted: 0.94 0.005 240;
+    --muted-foreground: 0.5 0.01 240;
+
+    --accent: 0.92 0.04 192;
+    --accent-foreground: 0.26 0.06 240;
+
+    --destructive: 0.577 0.245 27.325;
+    --destructive-foreground: 0.985 0 0;
+
+    --border: 0.88 0.008 240;
+    --input: 0.88 0.008 240;
+    --ring: 0.58 0.12 192;
+
+    --chart-1: 0.58 0.12 192;
+    --chart-2: 0.26 0.06 240;
+    --chart-3: 0.7 0.15 192;
+    --chart-4: 0.828 0.189 84.429;
+    --chart-5: 0.769 0.188 70.08;
+
+    --sidebar: 0.26 0.06 240;
+    --sidebar-foreground: 1 0 0;
+    --sidebar-primary: 0.58 0.12 192;
+    --sidebar-primary-foreground: 1 0 0;
+    --sidebar-accent: 0.35 0.07 240;
+    --sidebar-accent-foreground: 1 0 0;
+    --sidebar-border: 0.35 0.07 240;
+    --sidebar-ring: 0.58 0.12 192;
+  }
+
+  * {
+    @apply border-border;
+  }
+
+  html {
+    scroll-behavior: smooth;
+  }
+
+  body {
+    @apply bg-background text-foreground;
+    font-family: "Plus Jakarta Sans", sans-serif;
+    -webkit-font-smoothing: antialiased;
+  }
+}
